@@ -1,0 +1,51 @@
+main{
+    display: block;
+    align-items: center;
+}
+
+.boasvindas{
+display: block;
+height: 30vw;
+width: 100vw;
+}
+.novidades{
+height: 30vw;
+width: 100vw;
+display: block;
+}
+.boasvindas > a{
+
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.container{
+
+    position: relative;
+    height: 300px;
+    transition: 1s;
+}
+
+.sliders{
+position: relative;
+width: 90%;
+align-items: center;
+}
+
+.bullets{
+    text-align:center;
+}
+
+.bulletinativo{
+    margin: 0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+.bulletativo{
+    background-color: #333;
+}
+

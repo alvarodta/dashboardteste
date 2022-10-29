@@ -23,9 +23,6 @@ header{
     background-color: #FFF159;
     box-shadow: 1px 10px 10px 0px solid rgba(0, 0, 0, 0.39);
     border-radius: 10px;
-    
-    
-
 }
 
 header>h1{
@@ -34,28 +31,23 @@ header>h1{
     text-shadow: 1px 1px rgba(0, 0, 0, 0.511);
 }
 
-aside{
-  float: left;
+aside.menu-lateral{
+  
     
     height: 100vh;
     width: 13vw; /* alterar mq */
     background-color: #242C7C;
     box-shadow: 1px 1px 30px 0px  rgba(0, 0, 0, 0.39);
     border-radius: 1px 7px 1px 1px;
-    
-
 }
 
 
-section{
-   float: right;
-    
+section.dashboard{
     background-color:#ffffffd0;
     width: 87vw;
     height: 100vh;
     box-shadow: 1px 1px 30px 10px solid rgba(0, 0, 0, 0.39);
     border-radius: 5px;
-
 }
 
 li > a{
@@ -65,12 +57,10 @@ li > a{
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     display: block;
-    
 }
 li{
     margin-top: 30px;
     list-style: none;
-    
 }
 
 li >a:hover{
@@ -83,7 +73,6 @@ li >a:hover{
 }
 
 iframe{
-
     width: 87vw;
     padding-left:10px ;
     padding-right:10px ;
@@ -93,9 +82,8 @@ iframe{
 
 footer{
     width: 100vw;
-    height: 00px;
+    height: 0px;
     background-color: #e9db1b5e;
-
     border-radius: 10px;
 }
 
@@ -103,20 +91,18 @@ footer >h2{
 
     text-align: center;
     padding-top: 15px;
-   background-color: #000000;
+    background-color: #000000;
     color: white;
    
 }
 
 main{
-
+    display: flex;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 
 }
-
-
-
 
 i{
     cursor: pointer;
@@ -125,30 +111,5 @@ i{
 
 .hamburger{
     display: none;
-}
-
-@media screen and (max-width: 992px)and (min-width: 400px) {
-    li > a{
-        text-decoration: none;
-        padding-left: 10px;
-        font-size: 1.5em;
-       
-        font-family: "Roboto", sans-serif;
-        color: #000000;
-        
-    }
-    li{
-        margin-top: 40px;
-        list-style: none;
-    }
-    .menu-lateral{
-        display: none;
-    }
-    section{
-        width: 100vw;
-    }
-    .hamburger{
-        display: block;
-    }
 }
 

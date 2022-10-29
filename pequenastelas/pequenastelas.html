@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="boasvindas">
+            <h1>Boa tarde, Pessoa</h1>
+            <a href="#">Descubra o que mudou no App</a>
+        </div>
+        <div class="novidades">
+            <h2>Novidades</h2>
+            <div class="container">
+                <div class="sliders" style="display:block;">
+                    <h3>Conteudo 1</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia itaque blanditiis nostrum. Natus omnis odit velit maiores minima magnam eos quaerat eius culpa doloremque ea error asperiores, itaque repudiandae?</p>
+                </div>
+                <div class="sliders">
+                    <h3>Conteudo 2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia itaque blanditiis nostrum. Natus omnis odit velit maiores minima magnam eos quaerat eius culpa doloremque ea error asperiores, itaque repudiandae?</p>
+                </div>
+                <div class="sliders">
+                    <h3>Conteudo 3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia itaque blanditiis nostrum. Natus omnis odit velit maiores minima magnam eos quaerat eius culpa doloremque ea error asperiores, itaque repudiandae?</p>
+                </div>
+            </div>
+            <div class="bullets">
+                <div class="bulletativo"></div>
+                <div class="bulletinativo"></div>
+                <div class="bulletinativo"></div>
+            </div>
+        </div>
+        <div class="iframe">
+            <h3>Oi</h3>
+          
+        </div>
+    </main>
+<script>
+    var lastIndex =0;
+    var sliders = document.querySelectorAll('.sliders');
+    sliders.forEach((item,index)=>{
+        document.querySelectorAll('.bulletinativo')[index]
+        .addEventListener('click',()=>{
+            let lastSliders = document.querySelectorAll('.sliders')[lastIndex];
+            let actualSliders = document.querySelectorAll('.sliders')[index];
+            
+
+            document.querySelectorAll('.bulletinativo')[lastIndex]
+            .classList.remove('bulletativo');
+            document.querySelectorAll('.bulletinativo')[index]
+            .classList.add('bulletativo');
+            lastSliders.style.display='none';
+            actualSliders.style.display='block';
+
+            lastIndex =index;
+        })
+    })
+</script>
+</body>
+</html>
