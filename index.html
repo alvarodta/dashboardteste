@@ -7,20 +7,20 @@
     <title>Dashboard</title>
     
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="mq.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
-   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    <link rel="stylesheet" href="/css/mobile.css">     
 </head>
 <body>
-    <header>
-            <h1>
-                Dashboard Interativo
-            </h1>       
-    </header>    
-    <button class="hamburger" onclick="mostrar_menu()">
-        <i class="material-icons" >menu</i>                 
-    </button>
-    <main>        
+    <header class="col header">
+        <a href="#"><img alt="Logotipo empresa" src="https://erp.tiny.com.br/build/images/tiny-erp-mini.865c1564.svg"></a>
+        <button class="hamburger" onclick="mostrar_menu()">
+            <i class="material-icons" >menu</i>                 
+        </button>
+        <div>
+            <img alt="Imagem de usuário" src="https://erp.tiny.com.br/exibe.logo.empresa?idEmpresa=586887517&logoMenor=S">
+        </div>
+    </header>        
+    <main>                
         <aside class="menu-lateral">            
             <nav>                
                 <ul class="menu">
@@ -32,13 +32,65 @@
                     <li class="menuitem" > <a href="#">Teste 6</a></li>
                 </ul>                
             </nav>
-        </aside>
+        </aside><!-- Menu table computer -->
+        <div class="div-menu-table-mobile" id="mobile-menu">
+            <div class="list-content">
+                <button class="col" onclick="mostrar_opcoes('content-menu-inicio')">
+                    <span>
+                        Início
+                    </span>
+                    <a><img src="/imgs/baixo.png" alt="Ícone abaixar"></a>
+                </button>
+                <div class="div-submenu-mobile" id="content-menu-inicio"></div>
+                <button class="col" onclick="mostrar_opcoes('content-menu-produtos')">
+                    <span>
+                        Produtos
+                    </span>
+                    <a><img src="/imgs/baixo.png" alt="Ícone abaixar"></a>
+                </button>
+                <div class="div-submenu-mobile" id="content-menu-produtos"></div>
+                <button class="col" onclick="mostrar_opcoes('content-menu-vendas')">
+                    <span>
+                        Vendas
+                    </span>
+                    <a><img src="/imgs/baixo.png" alt="Ícone abaixar"></a>
+                </button>
+                <div class="div-submenu-mobile" id="content-menu-vendas"></div>
+                <button class="col" onclick="mostrar_opcoes('content-menu-relatorios')">
+                    <span>
+                        Relatórios
+                    </span>
+                    <a><img src="/imgs/baixo.png" alt="Ícone abaixar"></a>
+                </button>
+                <div class="div-submenu-mobile" id="content-menu-relatorios"></div>
+            </div><!-- Div de listagem de opções -->
+            <div class="config-system">
+                <li>
+                    <a class="col">
+                        <img alt="imagem configurações" src="/imgs/gears.png">
+                        <span>Configurações</span>                        
+                    </a>
+                    <a class="col">
+                        <img alt="imagem configurações" src="/imgs/theme.png">
+                        <span>Visualização</span>                        
+                    </a>
+                    <a class="col">
+                        <img alt="imagem configurações" src="/imgs/apoio-suporte.png">
+                        <span>Suporte</span>                        
+                    </a>
+                    <a class="col">
+                        <img alt="imagem configurações" src="/imgs/ajudando.png">
+                        <span>Ajuda</span>                        
+                    </a>
+                </li>
+            </div><!-- Div de configurações do sistema -->
+        </div><!-- Menu table Mobile -->
         <section class="dashboard">
             <iframe  id="tela" name="dashboard" src="" frameborder="0">                
             </iframe>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <h2>Site em desenvolvimento</h2>
     </footer>
     <script src="/script/script.js"></script>
