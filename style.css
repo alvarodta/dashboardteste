@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family:Arial, Helvetica, sans-serif;
+background-color: hsl(49, 100%, 50%);
+}
+
+header{
+    width: 100vw;
+    height: 13vh;
+    background-color: #FFF159;
+    box-shadow: 1px 10px 10px 0px solid rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    
+    
+
+}
+
+header>h1{
+    text-align: center;
+    padding-top: 15px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.511);
+}
+
+aside{
+  float: left;
+    
+    height: 100vh;
+    width: 13vw; /* alterar mq */
+    background-color: #242C7C;
+    box-shadow: 1px 1px 30px 0px  rgba(0, 0, 0, 0.39);
+    border-radius: 1px 7px 1px 1px;
+    
+
+}
+
+
+section{
+   float: right;
+    
+    background-color:#ffffffd0;
+    width: 87vw;
+    height: 100vh;
+    box-shadow: 1px 1px 30px 10px solid rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+
+}
+
+li > a{
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    display: block;
+    
+}
+li{
+    margin-top: 30px;
+    list-style: none;
+    
+}
+
+li >a:hover{
+    color: white;
+    font-size: 1.6em;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #fff15930;
+    padding: 5px;
+}
+
+iframe{
+
+    width: 87vw;
+    padding-left:10px ;
+    padding-right:10px ;
+    height: 100vh;
+    box-shadow: 1px 1px 30px 10px solid rgba(0, 0, 0, 0.39);
+}
+
+footer{
+    width: 100vw;
+    height: 00px;
+    background-color: #e9db1b5e;
+
+    border-radius: 10px;
+}
+
+footer >h2{
+
+    text-align: center;
+    padding-top: 15px;
+   background-color: #000000;
+    color: white;
+   
+}
+
+main{
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+
+
+i{
+    cursor: pointer;
+    background-color: #ffffffd0;
+}
+
+.hamburger{
+    display: none;
+}
+
