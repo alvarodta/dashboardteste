@@ -141,17 +141,14 @@ i{
         margin-top: 40px;
         list-style: none;
     }
-
-    aside{
-    width: 17vw;
-
+    .menu-lateral{
+        display: none;
     }
     section{
-        width: 83vw;
+        width: 100vw;
     }
-}
-
-.hamburger{
-    display: block;
+    .hamburger{
+        display: block;
+    }
 }
 

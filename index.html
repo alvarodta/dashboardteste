@@ -6,27 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="mq.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
    
 </head>
 <body>
     <header>
-        
             <h1>
                 Dashboard Interativo
-            </h1>
-       
-    </header>
-    <main>
-        <aside class="menu-lateral">
-            <nav>
-                <button class="hamburger">
-                    <i class="material-icons" >menu</i>
-                    
-                </button>
+            </h1>       
+    </header>    
+    <button class="hamburger" onclick="mostrar_menu()">
+        <i class="material-icons" >menu</i>                 
+    </button>
+    <main>        
+        <aside class="menu-lateral">            
+            <nav>                
                 <ul class="menu">
                     <li class="menuitem"> <a href="paginas/cordel.html" target="dashboard">Teste 1</a></li>
                     <li class="menuitem"> <a href="paginas/login.html" target="dashboard">Teste 2</a></li>
@@ -34,26 +30,17 @@
                     <li class="menuitem"> <a href="#">Teste 4</a></li> 
                     <li class="menuitem" > <a href="#">Teste 5</a></li> 
                     <li class="menuitem" > <a href="#">Teste 6</a></li>
-                </ul>
-                
+                </ul>                
             </nav>
         </aside>
         <section class="dashboard">
-
-            <iframe  id="tela" name="dashboard" src="" frameborder="0">
-
-                
+            <iframe  id="tela" name="dashboard" src="" frameborder="0">                
             </iframe>
         </section>
     </main>
     <footer>
         <h2>Site em desenvolvimento</h2>
-
     </footer>
-    <script>
-    
-
-       
-       </script>
+    <script src="/script/script.js"></script>
 </body>
 </html>
